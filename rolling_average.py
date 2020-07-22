@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 analyse = True
-matchtype = 'test'
 odi = "Men ODI Player Innings Stats - 21st Century.csv"
 
 while analyse == True:
@@ -11,6 +10,7 @@ while analyse == True:
     bowlyes = True
     rollrange = 20
     matchformat = "Men Test Player Innings Stats - 21st Century.csv"
+    matchtype = 'Test'
 
     print()
     print("Do you want to analyse tests or ODIs? Leave blank for tests or type ODI for ODIs.")
