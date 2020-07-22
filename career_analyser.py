@@ -2,8 +2,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 analyse = True
-matchformat = "Men Test Player Innings Stats - 21st Century.csv"
-matchtype = 'test'
 odi = "Men ODI Player Innings Stats - 21st Century.csv"
 
 while analyse == True:
@@ -11,7 +9,8 @@ while analyse == True:
     batyes = True
     bowlyes = True
     matchformat = "Men Test Player Innings Stats - 21st Century.csv"
-
+    matchtype = 'Test'
+    
     print()
     print("Do you want to analyse tests or ODIs? Leave blank for tests or type ODI for ODIs.")
     if input() != '':
@@ -151,7 +150,7 @@ while analyse == True:
         plt.axis([0,match,0,graphmax + 5])
         plt.xlabel('Number of matches')
         plt.ylabel('Average')
-        plt.title(str(matchtype) + 'Averages for ' + str(player))
+        plt.title(str(matchtype) + ' averages for ' + str(player))
         plt.legend()
         plt.show()
 
